@@ -16,16 +16,16 @@ body
         height: 100%;
         overflow-x: hidden;
     }
-	
+
 .tm-white a {
 	color: #fff;
 	text-decoration: underline;
 }
 
 /* start h1 group */
-h1 { 
+h1 {
     margin-top: 0;
-    margin-bottom: 25px; 
+    margin-bottom: 25px;
 }
 h1,
 h2,
@@ -45,14 +45,14 @@ img
 /* img */
 
 /* overlay */
-.overlay 
+.overlay
     {
        width: 100%;
        height: 100%;
        background: rgba(0, 0, 0, 0.4);
        padding-top: 90px;
        padding-bottom: 90px;
-    }  
+    }
 /* over lay */
 
 /* start page container */
@@ -94,7 +94,7 @@ img
                 align-items: center;
         background: none repeat scroll 0 0 #fff;
     }
-.sk-spinner-rotating-plane.sk-spinner 
+.sk-spinner-rotating-plane.sk-spinner
     {
          width: 30px;
         height: 30px;
@@ -176,7 +176,7 @@ img
 .navbar-default .navbar-toggle:focus { background-color: transparent }
 /* end navigation */
 
-/* start home */       
+/* start home */
 #home
     {
     background: url('../images/1.jpg') no-repeat;
@@ -249,7 +249,7 @@ img
     }
 #feature span
     {
-        float: left;
+      /*  float: left; */
     }
 #feature .fa
     {
@@ -277,7 +277,7 @@ img
     }
 #feature1 span
     {
-        float: left;
+      /*  float: left; */
     }
 #feature1 .fa
     {
@@ -469,6 +469,21 @@ footer
     }
 /* end footer */
 
+/* Grilla de la Comisión directiva */
+
+#comision_directiva .cargos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 50px;
+}
+#comision_directiva .img-responsive {
+  float: left;
+  max-width: 50%;
+  margin: auto;
+}
+
+/* fin de grilla de comisión, aunque hay algo más mezclado en los media */
+
 @media screen and ( max-width: 991px ) {
     .templatemo-box {
         margin-bottom: 30px;
@@ -485,6 +500,14 @@ footer
     #feature1 img {
         margin-bottom: 30px;
     }
+    #comision_directiva .img-responsive {
+      float: left;
+      max-width: 50%;
+      margin: auto;
+    }
+    #comision_directiva h3 {
+      font-size: 1em;
+    }
 }
 @media screen and ( max-width: 767px ) {
     .navbar-default .nav li a {
@@ -498,6 +521,18 @@ footer
     #contact .overlay {
         padding-top: 40px;
     }
+    #comision_directiva .img-responsive {
+      float: none;
+      max-width: 50%;
+      margin: auto;
+    }
+    #comision_directiva .cargos {
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 20px;
+    }
+    #comision_directiva h3 {
+      font-size: 1.2em;
+    }
 }
 /* start media 360 */
 @media screen and ( max-width: 360px ){
@@ -505,5 +540,37 @@ footer
         {
             padding-bottom: 40px;
         }
+        #comision_directiva .cargos {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-gap: 5px;
+        }
+        #comision_directiva img {
+          max-width: 150px;
+          margin: auto;
+        }
+        #comision_directiva h3 {
+          font-size: 1em;
+        }
+        #comision_directiva .img-responsive {
+          float: none;
+          max-width: 75%;
+        }
 }
 /* end media 360 */
+
+/* conversión de <p> a <ul> */
+
+ul.fa-ul {
+  margin: 0 0 20px 0;
+}
+
+ul.fa-ul li {
+  padding: 12px 0 0 20px;
+  margin: 0 0 20px 20px;
+}
+
+#feature ul.fa-ul li {
+  margin: 0 0 20px 20px;
+  padding: 12px 0 0 20px;
+}
