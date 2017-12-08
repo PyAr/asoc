@@ -36,11 +36,6 @@ DATA_OK_TITLE = "Datos OK"
 
 def main(credentials_file, rows):
     """Main entry point."""
-#    titles = ['Nro', 'Nombre', 'Apellido', 'Tipo socio', 'DNI', 'EMail', 'Nick', 'Foto',
-#              'Nacionalidad', 'Estado Civil', 'Profesión', 'Fecha Nacimiento', 'Domicilio']
-#    asocio_titles ={'Nro':False, 'Nombre':'nombre', 'Apellido':'apellido', 'Tipo socio':'tiposocio', 'DNI':'dni', 'EMail':'email', 'Nick':False, 'Foto':False,
-#              'Nacionalidad':'nacionalidad', 'Estado Civil':'ecivil', 'Profesión':'profesion', 'Fecha Nacimiento':'fnac', 'Domicilio':'domicilio'}
-
     # open the spreadsheet
     credentials = ServiceAccountCredentials.from_json_keyfile_name(credentials_file, SCOPE)
     gc = gspread.authorize(credentials)
@@ -49,12 +44,10 @@ def main(credentials_file, rows):
     # get the map from spreadsheet titles to colums
     title_values = wks.row_values(TITLE_ROW)
     row_titles = {val: i for i, val in enumerate(title_values)}
-    print("======== row titles", row_titles)
     svgfield2col = {}
     for title, svgfield in SVG_FIELDS:
         svgfield2col[svgfield] = row_titles[title]
     data_ok_column = row_titles[DATA_OK_TITLE]
-    print("======== svg2f", svgfield2col)
 
     # build each replace data for each row
     replace_data = []
@@ -67,7 +60,6 @@ def main(credentials_file, rows):
                 "Data is not OK for row {} ({!r})".format(row, row_values[data_ok_column]))
 
         d = {field: row_values[col] for field, col in svgfield2col.items()}
-        print("==========d", d)
         replace_data.append(d)
 
     # generate the certificates
