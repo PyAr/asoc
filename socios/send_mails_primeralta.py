@@ -289,7 +289,7 @@ def main(credentials_file, rows):
     send_mails(mails)
 
 
-USAGE = "Usage: send_mails.py credentials.json row_from [row_to]"
+USAGE = "Usage: send_mails_primeralta.py google_credentials.json row_from [row_to]"
 
 if __name__ == '__main__':
     if len(sys.argv) == 3:
