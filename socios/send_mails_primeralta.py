@@ -164,17 +164,19 @@ podemos continuar con el trámite:
     https://forms.todopago.com.ar/formulario/commands?command=formulario&fr=1&m=f64f0d3b5f324abdd3f87a4b2c87952c
 """
 
-COLAB_NOT_YET = """
+COLABORADOR = """
 Además, te cuento que para ser socia/o colaborador/a hay que participar en algún proyecto de la
-Asociación Civil. Todavía estamos armando la página para presentar qué proyectos hay disponibles
-para que veas donde podés ayudar, así que si querés ser Socia/o por ahora tenemos dos opciones:
+Asociación Civil.
 
-- Contannos si tenés un proyecto para impulsar desde la Asociación Civil para la comunidad.
-  Tendrías que presentar un proyecto, lo evaluamos, y te damos un feedback.
+Para poder continuar con el trámite, tenés que darte de alta como colaborador siguiendo los
+pasos descriptos acá:
 
-- Elegís otro tipo de Socia/o (Adherente, Activo, etc.)
+    https://github.com/PyAr/asoc/wiki/Socios-colaboradores
 
-Decime qué te parece.
+Con esa confirmación ya le metemos para adelante, y luego de un año se hace la evaluación
+correspondiente para poder seguir.
+
+Avisame entonces cuando hayas realizado ese procedimiento.
 """
 
 ALL_PAYMENTS = {
@@ -202,7 +204,9 @@ ALL_PAYMENTS = {
         PMENT_ESTUDIANTE_CARD_6m,
 
     ('Colaborador', 'COL'):
-        COLAB_NOT_YET,
+        COLABORADOR,
+    ('Cadete', 'CAD'):
+        "",
 }
 
 
