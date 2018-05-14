@@ -114,6 +114,13 @@ podemos continuar con el trámite:
     https://forms.todopago.com.ar/formulario/commands?command=formulario&fr=1&m=56ff9e1c1ba2317c797eb29b4d7d0a02
 """
 
+PMENT_ACTIVO_CRED_6m = """
+Te dejo el link para que pagues (Socia/o Activa/o por seis meses, total $1200), así
+podemos continuar con el trámite:
+
+    https://forms.todopago.com.ar/formulario/commands?command=formulario&fr=1&m=7acbfc555b7673c3b753a60d1ee4dfb0
+"""
+
 PMENT_ADHERENTE_AUTO = """
 Te dejo el link para que pagues (Socia/o Adherente débito automático mensual de $75), así
 podemos continuar con el trámite:
@@ -188,6 +195,8 @@ ALL_PAYMENTS = {
         PMENT_ACTIVO_BANK_6m,
     ('Activo', 'Pago Anual (Tarjeta de Crédito, Débito, Pago Fácil, Rapipago, etc)'):
         PMENT_ACTIVO_CRED_12m,
+    ('Activo', 'Pago Semestral (Tarjeta de Crédito, Débito, Pago Fácil, Rapipago, etc)'):
+        PMENT_ACTIVO_CRED_6m,
 
     ('Adherente', 'Débito automático'):
         PMENT_ADHERENTE_AUTO,
