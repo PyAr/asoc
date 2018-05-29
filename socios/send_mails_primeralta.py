@@ -164,11 +164,36 @@ podemos continuar con el trámite:
     https://forms.todopago.com.ar/formulario/commands?command=formulario&fr=1&m=cb0003dd9a62b25bed9a82545dda9bd5
 """
 
+PMENT_ESTUDIANTE_AUTO = """
+Te dejo el link para que pagues (Socia/o Estudiante, débito automático de $25 por mes), así
+podemos continuar con el trámite:
+
+    http://mpago.la/GONo
+"""
+
+PMENT_ESTUDIANTE_CARD_12m = """
+Te dejo el link para que pagues (Socia/o Estudiante por un año, total $300), así
+podemos continuar con el trámite:
+
+    https://forms.todopago.com.ar/formulario/commands?command=formulario&fr=1&m=e26df4ad26a22e2538cef28e317356e8
+"""
+
 PMENT_ESTUDIANTE_CARD_6m = """
 Te dejo el link para que pagues (Socia/o Estudiante por seis meses, total $150), así
 podemos continuar con el trámite:
 
     https://forms.todopago.com.ar/formulario/commands?command=formulario&fr=1&m=f64f0d3b5f324abdd3f87a4b2c87952c
+"""
+
+PMENT_ESTUDIANTE_BANK_12m = """
+Te dejo los datos para que deposites o transfieras (Socia/o Estudiante por un año, total $300),
+así podemos continuar con el trámite:
+
+    Asociación Civil Python Argentina
+    Banco Credicoop
+    Cuenta Corriente en pesos
+    Nro. 191-153-009748/3
+    CBU 19101530-55015300974832
 """
 
 COLABORADOR = """
@@ -209,6 +234,12 @@ ALL_PAYMENTS = {
     ('Adherente', 'Pago Semestral (Tarjeta de Crédito, Débito, Pago Fácil, Rapipago, etc)'):
         PMENT_ADHERENTE_CARD_6m,
 
+    ('Estudiante', 'Débito automático'):
+        PMENT_ESTUDIANTE_AUTO,
+    ('Estudiante', 'Pago Anual (Transferencia Bancaria o depósito)'):
+        PMENT_ESTUDIANTE_BANK_12m,
+    ('Estudiante', 'Pago Anual (Tarjeta de Crédito, Débito, Pago Fácil, Rapipago, etc)'):
+        PMENT_ESTUDIANTE_CARD_12m,
     ('Estudiante', 'Pago Semestral (Tarjeta de Crédito, Débito, Pago Fácil, Rapipago, etc)'):
         PMENT_ESTUDIANTE_CARD_6m,
 
