@@ -15,6 +15,9 @@ import certg  # fades file:///home/facundo/devel/reps/certg
 import pyqrcode  # fades
 
 
+DEFAULT_FACE = "logo-python-cuadradito.png"
+
+
 def generate_qr(apell, nombre, mail):
     qr = pyqrcode.create("{} {} <{}>".format(nombre, apell, mail))
     _, tmpfile = tempfile.mkstemp(suffix='.png')
@@ -34,9 +37,9 @@ image_info = [{
 with open("socscarnet.txt", "rt", encoding="utf8") as fh:
     for line in fh:
         nrosoc, apell, nombre, mail, nick, face_path = line.strip().split("|")
-        # if apell not in ("Batista", "Martin"):
-        #     continue  # FIXME
         qr_path = generate_qr(apell, nombre, mail)
+        if face_path in ("", "False"):  # missing picture, or specifically asked to not have one
+            face_path = DEFAULT_FACE
         replace_info.append({
             'nsoc': "{:04d}".format(int(nrosoc)),
             'apellido': apell,
@@ -51,4 +54,4 @@ def cback(data):
     print("Avance:", data['nsoc'])
 
 
-certg.process("carnet.svg", "socio", "nsoc", replace_info, image_info, progress_cb=cback)
+certg.process("carnet-adelante.svg", "socio", "nsoc", replace_info, image_info, progress_cb=cback)
