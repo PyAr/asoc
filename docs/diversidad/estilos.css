@@ -1,0 +1,176 @@
+/* normalizacion de otras hojas de estilo  */
+* {box-sizing: border-box;}
+body {   margin-bottom: 0; background-color: #EEEEEE;font-family: Ubuntu; font-size: 10pt;line-height: 1.4;margin:0;}
+
+
+/*colores*/
+.color-white{background-color:#fff !important;}
+.text-white{color:#fff !important;}
+.text-color-1{color:#4494D0 !important;}
+.border-color-white{border-color: #fff !important;}
+.border-color-1{border-color: #4494D0 !important;}
+.border-color-2{border-color: #FDD301 !important;}
+.color-1{background-color:#4494D0!important;}
+.text-color-2{color:#FDD301!important;}
+.color-2{background-color:#FDD301!important;}
+
+.fill-grdnt1{fill:url(#grdnt1);}
+.fill-1{fill:#4494D0;}
+.fill-white{fill:#FFFFFF;}
+.fill-2{fill:#FDD301;}
+ 
+ .grdnt1{
+background: #aac6e8;
+background: -moz-linear-gradient(left, #aac6e8 0%, #4495d1 100%);
+background: -webkit-linear-gradient(left, #aac6e8 0%,#4495d1 100%); 
+background: linear-gradient(to right, #aac6e8 0%,#4495d1 100%);
+}
+/* generales */
+.block{display:block}
+.inline-block,.escalar, .sub-escalar *{display: inline-block}
+.max-w-1200{max-width:1200px;}
+.max-w-800{max-width:800px;}
+.full-width{width:100%;}
+.relative{position: relative;}
+.center{text-align:center;}
+.left-align{text-align:left}
+.v-align-top{vertical-align: top;}
+.anim, .sub-anim *{-webkit-transition: all .5s ease;transition: all .5s ease;}
+.escalar:hover, .sub-escalar *:hover{
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.mirror {
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+}
+.columnas-2{
+	-webkit-columns: auto 2;-moz-columns: auto 2;columns: auto 2;
+	-webkit-column-gap: 50px;-moz-column-gap: 50px;column-gap: 50px;
+	text-indent: 20px;
+}
+.clear{clear:both}
+.margin-none{margin:0}
+.small-padding{padding:10px }
+.small-margin{margin-top:10px;margin-bottom:10px}
+.medium-padding{padding:30px }
+.medium-margin{margin-top:30px;margin-bottom:30px}
+.margin-auto{margin-left:auto; margin-right:auto}
+.big-padding{padding:50px 70px 70px;}
+.big-padding-x{padding:50px 0 70px;}
+.big-margin{margin-top:70px;margin-bottom:70px}
+.z-plus-1{z-index:+1}
+.titulo{font-family: comfortaa;font-size: 32pt;border-bottom: solid 3px;letter-spacing:2px}
+.subtitulo{font-family: comfortaa;font-size: 18pt; margin: 20px auto; letter-spacing:1px}
+.glow{
+	-webkit-box-shadow: 0px 0px 21px 1px rgba(255,255,255,.5);
+	-moz-box-shadow: 0px 0px 21px 1px rgba(255,255,255,.5);
+	box-shadow: 0px 0px 21px 1px rgba(255,255,255,.5);
+}
+.shadow{
+	-webkit-box-shadow: 10px 10px 5px -3px rgba(0,0,0,.2);
+	-moz-box-shadow: 10px 10px 5px -3px rgba(0,0,0,.2);
+	box-shadow: 10px 10px 5px -3px rgba(0,0,0,.2);
+}
+.border-bottom{border-bottom: 10px solid;}
+
+.viboras{   background-image: url("viboras-diversidad.png");height: 70px;background-size: contain; background-repeat:repeat-x}
+
+.triangle-up-color-white{border-bottom: 100px solid #fff;}
+.triangle-up-color-1{border-bottom: 100px solid #4494D0;}
+.triangle-up-color-2{border-bottom: 100px solid #FDD301;}
+.triangle-down-color-white{border-top: 100px solid #fff;}
+.triangle-down-color-1{border-top: 100px solid #4494D0;}
+.triangle-down-color-2{border-top: 100px solid #FDD301;}
+
+.triangle-down-color-white,.triangle-down-color-1,.triangle-down-color-2{width: 0;height: 0;border-right: 98vw solid transparent;}
+.triangle-up-color-white,.triangle-up-color-1,.triangle-up-color-2{	width: 0;height: 0; border-left: 98vw solid transparent;float: right;}
+
+#cielo-bg{	position: fixed;top: 0;	min-height:calc( 100vh - 60px);	}
+#ciudad-bg{	bottom:0;position: absolute;}
+ 
+@keyframes colorChange {0%{opacity:0}50%{opacity:.4}100%{opacity:0}}
+#cielo-bg path {fill:#fff;animation: colorChange 10s infinite;opacity:0;}
+#cielo-bg path:nth-child(5n+1) { animation-delay: 2s;}
+#cielo-bg path:nth-child(5n+2) { animation-delay: 4s;}
+#cielo-bg path:nth-child(5n+3) { animation-delay: 6s;}
+#cielo-bg path:nth-child(5n+4) { animation-delay: 8s;}
+
+/*footer*/
+.main-footer{height: 500px; border-bottom:5px solid #FDD301;}
+#Puente-mujer{position: absolute;bottom: 0px;}
+#Puente-mujer svg{max-width: 560px;width: 100%;display: block;margin: auto;}
+#Puente-mujer div{ border: solid 20px #fff;}
+
+
+.titulo-diversidad {
+    font-family: comfortaa;
+    font-size: 26pt;
+    letter-spacing: 2px;
+    line-height: initial;
+}
+#intro div{    min-height: 420px;}
+#intro div.color-2{
+	    max-width: 400px;
+    display: inline-block;
+    padding: 45px 61px;
+}
+#intro div.color-white{
+	    max-width: 800px;
+}
+.feliz{
+    display: inline-block;
+    height: 20px;
+    margin: 0;
+    vertical-align: bottom;
+    font-size: 16pt;
+    position: relative;
+    top: -4px;
+}
+.border-bottom-s{border-bottom: 2px solid; padding: 0px 0 20px; margin-bottom: 20px }
+.resaltado{
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 2px;
+}
+#tips {list-style: none;    padding-right: 20px;}
+#tips li{margin-bottom: 15px; position: relative;}
+#tips li::before {
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    border-radius: 50%;
+    padding: 8px;
+    left: -4px;
+    width: 1px;
+}
+
+#titulo-principal{font-size: 50pt;   margin: 30px 0 20px;}
+@keyframes viboras-anim {
+    0%   {background-position: 0;}
+    100% {background-position: 1180px;}
+}
+.viboras {animation: viboras-anim 120s infinite linear; background-size: 1180px 70px ;}
+#ciudad-bg{bottom:0px;}
+@media(max-width:900px) {
+	.columnas-2{-webkit-columns: auto 1;-moz-columns: auto 1;columns: auto 1;}
+	.big-padding { padding: 50px 30px;}
+	.event-contacts { bottom: 35px;}
+	.eventol {right: auto;text-align: center;width: 100%;}
+	.titulo{font-size:20pt }
+	.subtitulo{font-size:20pt }
+	#Puente-mujer div{ border: solid 10px #fff;}
+	.main-footer{height: 350px}
+	#titulo-principal{font-size: 40pt;}
+}
+
+@media(max-width:400px) {
+	#Puente-mujer div{ border: solid 6px #fff;}
+	.main-footer{height: 160px}
+	#titulo-principal{font-size: 30pt;}
+}
