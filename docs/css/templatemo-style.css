@@ -185,6 +185,8 @@ img
     margin-top: 70px;
     text-align: center;
     width: 100%;
+    background-position: center center;
+    background-attachment: fixed;
     }
 #home p
     {
