@@ -33,6 +33,7 @@ h3,
 h4
     {
         font-weight: bold;
+        padding-bottom: 30px;
     }
 /* end h1 group */
 p { line-height: 1.6em; }
@@ -409,21 +410,27 @@ img
 /* end download */
 
 /* start benefactoras */
-.platinum
-    {
-        width: 100%;
-        height: 100%;
-    }
-.gold
-    {
-        width: 70%;
-        height: 70%;
-    }
-.silver
-    {
-        width: 40%;
-        height: 40%;
-    }
+.platinum {
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.gold {
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.silver {
+    padding: 10px;
+    width: 25%;
+    height: 25%;
+    margin-left: auto;
+    margin-right: auto;
+}
 /* end benefactoras */
 
 /* start contact */
