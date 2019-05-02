@@ -412,22 +412,16 @@ img
 /* start benefactoras */
 .platinum {
     padding: 30px;
-    width: 100%;
-    height: 100%;
     margin-left: auto;
     margin-right: auto;
 }
 .gold {
     padding: 20px;
-    width: 50%;
-    height: 50%;
     margin-left: auto;
     margin-right: auto;
 }
 .silver {
     padding: 10px;
-    width: 25%;
-    height: 25%;
     margin-left: auto;
     margin-right: auto;
 }
