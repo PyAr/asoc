@@ -4,6 +4,6 @@ Los PNGs tienen que estar con el tamaño específico en función de la categorí
 - Oro: 12600
 - Plata: 6300
 
-Si da menos, conseguir un original más grande.
+Si da menos que ese AREA, conseguir un original más grande.
 
-Si da más, hacer X / area_actual, y redimensionar a ese porcentaje.
+Si da más que ese AREA, siendo `w` y `h` el tamaño de la imagen actual, el nuevo ancho será `math.sqrt(AREA * w / h)` (y el nuevo alto proporcional).
