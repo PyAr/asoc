@@ -8,6 +8,7 @@ fades:
     pypng
 """
 
+import csv
 import os
 import tempfile
 
@@ -18,8 +19,8 @@ import pyqrcode  # fades
 DEFAULT_FACE = "logo-python-cuadradito.png"
 
 
-def generate_qr(apell, nombre, mail):
-    qr = pyqrcode.create("{} {} <{}>".format(nombre, apell, mail))
+def generate_qr(last_name, first_name, mail):
+    qr = pyqrcode.create("{} {} <{}>".format(first_name, last_name, mail))
     _, tmpfile = tempfile.mkstemp(suffix='.png')
     qr.png(tmpfile, scale=3, background=(0xf7, 0xe6, 0xdc, 0xff), quiet_zone=3)
     return tmpfile
@@ -34,17 +35,18 @@ image_info = [{
     'path_variable': 'qr_path',
 }]
 
-with open("socscarnet.txt", "rt", encoding="utf8") as fh:
-    for line in fh:
-        nrosoc, apell, nombre, mail, nick, face_path = line.strip().split("|")
-        qr_path = generate_qr(apell, nombre, mail)
+with open("dump-carnets.csv", "rt", encoding="utf8") as fh:
+    reader = csv.DictReader(fh)
+    for item in reader:
+        qr_path = generate_qr(item['last_name'], item['first_name'], item['email'])
+        face_path = item['picture']
         if face_path in ("", "False"):  # missing picture, or specifically asked to not have one
             face_path = DEFAULT_FACE
         replace_info.append({
-            'nsoc': "{:04d}".format(int(nrosoc)),
-            'apellido': apell,
-            'nombre': nombre,
-            'nick': nick,
+            'nsoc': "{:04d}".format(int(item['legal_id'])),
+            'apellido': item['last_name'],
+            'nombre': item['first_name'],
+            'nick': item['nick'],
             'face_path': os.path.abspath(face_path),
             'qr_path': os.path.abspath(qr_path),
         })
