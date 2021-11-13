@@ -1,0 +1,31 @@
+
+para el lunes 31!!!!!!!!!!!!!!!!!!!!!!!!
+
+"""
+¡Charla de la última Juntada Virtual!
+
+¿Code Smells? y eso... ¿con qué se come?, por Augusto Kielbowicz (Sasha)
+
+FIXME link
+
+Un recorrido por los Code Smells descriptos en el libro Refactoring, dónde vamos a explorar que son exactamente y cómo nos pueden ayudar a mejorar el diseño de nuestro código.
+
+Nivel: Principiante, Intermedio
+"""
+
+
+para el miércoles 2!!!!!!!!!!!!!!!!!
+
+"""
+¡Charla rápidas de la última Juntada Virtual!
+
+LINK!!!!
+
+En esta ocasión:
+
+- 2 + 2 = 5, por Agustin Scaramuzza
+
+- Brython, Python en el browser, por Fisa
+
+- pytest para quienes no saben de unit testing, por Andre Delfino
+"""
