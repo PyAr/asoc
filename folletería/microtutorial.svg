@@ -6,7 +6,7 @@
    height="297mm"
    id="svg2"
    sodipodi:version="0.32"
-   inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
    version="1.0"
    sodipodi:docname="microtutorial.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
@@ -1470,15 +1470,15 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.90092728"
-     inkscape:cx="375.724"
-     inkscape:cy="633.79144"
+     inkscape:zoom="2.8284271"
+     inkscape:cx="707.28356"
+     inkscape:cy="1000.0258"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
-     inkscape:window-width="1366"
-     inkscape:window-height="709"
+     inkscape:current-layer="g1795"
+     inkscape:window-width="2560"
+     inkscape:window-height="1339"
      inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-y="38"
      width="744.09449px"
      height="1052.3622px"
      showguides="true"
@@ -1974,9 +1974,9 @@
              style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.3933px;line-height:140%;font-family:'Bitstream Vera Sans';text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#141414;fill-opacity:1">Python Argentina</tspan><tspan
              sodipodi:role="line"
              x="597.66199"
-             y="830.86487"
+             y="831.13629"
              id="tspan3756-5"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:140%;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#006b00;fill-opacity:1">https://www.python.org.ar</tspan></text>
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:140%;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#006b00;fill-opacity:1">www.python.org.ar</tspan></text>
       </g>
       <g
          transform="matrix(0.99420993,0,0,0.99420993,-18.001441,34.247258)"
@@ -2004,8 +2004,8 @@
              sodipodi:role="line"
              id="tspan3711-7"
              x="597.31598"
-             y="866.33887"
-             style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:140%;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;text-indent:0;text-align:center;text-decoration:none;text-decoration-line:none;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;baseline-shift:baseline;text-anchor:middle;display:inline;overflow:visible;visibility:visible;fill:#006b00;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;enable-background:accumulate">pyar.discourse.group</tspan></text>
+             y="866.40674"
+             style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:140%;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;text-indent:0;text-align:center;text-decoration:none;text-decoration-line:none;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;baseline-shift:baseline;text-anchor:middle;display:inline;overflow:visible;visibility:visible;fill:#006b00;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;enable-background:accumulate">charlas.python.org.ar</tspan></text>
       </g>
       <g
          transform="matrix(0.99420993,0,0,0.99420993,-18.001441,19.852546)"
@@ -2032,9 +2032,9 @@
              id="tspan5793-9-5">Disfrutá el Tutorial en castellano:</tspan><tspan
              sodipodi:role="line"
              x="597.59705"
-             y="958.0722"
+             y="958.14008"
              id="tspan5797-4-1"
-             style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:140%;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;text-indent:0;text-align:center;text-decoration:none;text-decoration-line:none;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;baseline-shift:baseline;text-anchor:middle;display:inline;overflow:visible;visibility:visible;fill:#006b00;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;enable-background:accumulate">tutorial.python.org.ar</tspan></text>
+             style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:140%;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;text-indent:0;text-align:center;text-decoration:none;text-decoration-line:none;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;baseline-shift:baseline;text-anchor:middle;display:inline;overflow:visible;visibility:visible;fill:#006b00;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;enable-background:accumulate">bit.ly/tutorial-python-es</tspan></text>
       </g>
       <g
          transform="matrix(0.99420993,0,0,0.99420993,-18.001441,57.934056)"
@@ -2063,7 +2063,7 @@
              x="597.59705"
              y="958.14008"
              id="tspan5797-4-1-3"
-             style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:140%;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;text-indent:0;text-align:center;text-decoration:none;text-decoration-line:none;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;baseline-shift:baseline;text-anchor:middle;display:inline;overflow:visible;visibility:visible;fill:#006b00;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;enable-background:accumulate">https://ac.python.org.ar</tspan></text>
+             style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:140%;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;text-indent:0;text-align:center;text-decoration:none;text-decoration-line:none;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;baseline-shift:baseline;text-anchor:middle;display:inline;overflow:visible;visibility:visible;fill:#006b00;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;enable-background:accumulate">ac.python.org.ar</tspan></text>
       </g>
       <g
          transform="matrix(0.99420993,0,0,0.99420993,-18.186245,72.284325)"
